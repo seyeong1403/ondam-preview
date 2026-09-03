@@ -1,0 +1,16 @@
+﻿히어로 스톡 출처 (Pexels 무료 라이선스, 시안용 — 최종은 유료 스톡/실물로 교체)
+얼굴 없는 컷으로 구성 (외국인 얼굴 이질감 회피, 세영 지시 2026-09-02)
+hero1.jpg (d6) = https://www.pexels.com/photo/7296753/   원목 교구 테이블과 손
+hero2.jpg (d2) = https://www.pexels.com/photo/25472023/  뜨개질하는 어르신 손
+hero3.jpg (d3) = https://www.pexels.com/photo/9196116/   두 손에 담긴 완성 종이학
+백업: d2-knit.jpg, d3-crane.jpg, d6-wood.jpg 동일 파일
+
+슬롯 임시 이미지 (온담 요청 9/3, 중복 허용·디자인 확인용)
+t1-terr = pexels.com/photo/4507704   테라리움 만드는 손 (story, p2, g2)
+t3-pressed-frame = pexels.com/photo/13847649  압화 액자 (p4, g3)
+t4-pressed-flat = pexels.com/photo/39151870   압화 플랫레이 (m3)
+t5-water-workshop = pexels.com/photo/6925327  수채화 작업 (p3)
+t6-water-hand = pexels.com/photo/29866906     채색하는 손 (m2)
+t7-lantern = pexels.com/photo/18335383        종이 등불 (p1, g1)
+t8-pressed-table = pexels.com/photo/34199668  압화 작업 (m5)
+t2-terr-rope = pexels.com/photo/4751995       (예비)
