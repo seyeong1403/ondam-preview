@@ -502,7 +502,6 @@ p { margin: 0; }
 @media (max-width: 1024px) {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .moments-strip { grid-template-columns: repeat(3, 1fr); }
-  .slot-m4, .slot-m5 { display: none; }
   .story-grid { grid-template-columns: 1fr; gap: 48px; }
   .gnb-menu { display: none; }
 }
@@ -517,6 +516,7 @@ p { margin: 0; }
   .step:not(:last-child)::after { display: none; }
   .moments-strip { grid-template-columns: 1fr 1fr; }
   .moments-strip .slot { height: 220px; }
+  .moments-strip .slot-m5 { grid-column: 1 / -1; }
   .sec-cta { padding: 96px 0; }
   .cta-text h2 { font-size: 27px; }
   .footer-inner { grid-template-columns: 1fr; }
