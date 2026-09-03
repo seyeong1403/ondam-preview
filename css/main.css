@@ -421,7 +421,7 @@ p { margin: 0; }
 
 /* 대표 제품 이미지: 좌→우 와이프 (카드 순서대로 시차) */
 .prod-grid .prod-img {
-  clip-path: inset(0 100% 0 0 round var(--radius));
+  clip-path: inset(0 100% 0 0);
   transition: clip-path 1s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, transform 0.4s ease, box-shadow 0.4s ease;
 }
 .prod-grid .prod:nth-child(2) .prod-img {
@@ -430,7 +430,7 @@ p { margin: 0; }
 .prod-grid .prod:nth-child(3) .prod-img {
   transition: clip-path 1s cubic-bezier(0.22, 1, 0.36, 1) 0.45s, transform 0.4s ease, box-shadow 0.4s ease;
 }
-.prod-grid.is-in .prod-img { clip-path: inset(0 0 0 0 round var(--radius)); }
+.prod-grid.is-in .prod-img { clip-path: inset(0 0 0 0); }
 .prod:hover .prod-img { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(90, 66, 40, 0.13); }
 .prod h3 { margin-top: 22px; font-size: 20px; color: var(--brown-deep); }
 .prod-cap { margin-top: 8px; font-size: 15.5px; color: var(--muted); }
