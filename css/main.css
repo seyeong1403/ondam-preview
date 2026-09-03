@@ -207,7 +207,7 @@ p { margin: 0; }
 .hero-body { position: relative; z-index: 3; padding: 0 24px; }
 .hero-logo {
   height: 280px;
-  aspect-ratio: 263.4 / 235.2;
+  aspect-ratio: 264.44 / 236.22;
   margin-bottom: 36px;
   filter: drop-shadow(0 4px 16px rgba(30, 20, 10, 0.35));
 }
