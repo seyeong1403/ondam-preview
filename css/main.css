@@ -19,8 +19,8 @@
   --ink: #3A3128;
   --muted: #8B7D6D;
   --line: #E7DFD3;
-  --accent: #B25E37;
-  --accent-deep: #97491F;
+  --accent: #CE6527;
+  --accent-deep: #A94D15;
   --radius: 18px;
   --radius-s: 12px;
   --font-body: "Pretendard", "Malgun Gothic", sans-serif;
@@ -247,10 +247,37 @@ p { margin: 0; }
 .hero-dots i { width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 250, 242, 0.45); transition: background-color 0.3s ease, width 0.3s ease; }
 .hero-dots i.is-on { background: #FFFDF8; width: 26px; border-radius: 999px; }
 
+/* ── 1.5 활동 가치 ── */
+.sec-values { background: #FFFDF9; border-bottom: 1px solid var(--line); padding: 96px 0; }
+.values { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.value { text-align: left; }
+.value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+.value-icon svg { width: 30px; height: 30px; }
+.vi-teal { background: #E2EEEC; color: var(--teal); }
+.vi-olive { background: #EEF0DF; color: #5B6532; }
+.vi-brown { background: #F0E6D8; color: var(--brown); }
+.vi-orange { background: #F9E4D3; color: var(--accent); }
+.value h3 { font-size: 20px; color: var(--brown-deep); }
+.value p { margin-top: 8px; font-size: 16px; color: var(--muted); }
+
 /* ── 2. 온담 이야기 프리뷰 ── */
 .sec-story { background: var(--ivory); }
 .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
 .story-text .lead { margin-top: 24px; font-size: 18.5px; color: #5C5245; }
+.story-slogan {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
 .story-visual { position: relative; }
 .slot-story { height: 510px; border-radius: var(--radius); }
 
@@ -417,6 +444,7 @@ p { margin: 0; }
 .sec-product { background: #FFFDF9; text-align: left; }
 .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .prod { display: block; }
+.prod .prod-buy { margin-top: 14px; font-size: 16px; }
 .prod-img { height: 385px; border-radius: var(--radius); }
 
 /* 대표 제품 이미지: 좌→우 와이프 (카드 순서대로 시차) */
@@ -502,6 +530,7 @@ p { margin: 0; }
 @media (max-width: 1024px) {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .moments-strip { grid-template-columns: repeat(3, 1fr); }
+  .values { grid-template-columns: repeat(2, 1fr); }
   .story-grid { grid-template-columns: 1fr; gap: 48px; }
   .gnb-menu { display: none; }
 }
@@ -515,6 +544,7 @@ p { margin: 0; }
   .steps { gap: 40px; }
   .step:not(:last-child)::after { display: none; }
   .moments-strip { grid-template-columns: 1fr 1fr; }
+  .values { grid-template-columns: 1fr; gap: 36px; }
   .moments-strip .slot { height: 220px; }
   .moments-strip .slot-m5 { grid-column: 1 / -1; }
   .sec-cta { padding: 96px 0; }
