@@ -46,6 +46,7 @@
 // 활동 사진 라이트박스
 (function () {
   var box = document.getElementById("lightbox");
+  if (!box) return;
   var img = document.getElementById("lightboxImg");
   var closeBtn = box.querySelector(".lightbox-close");
   var lastFocus = null;
@@ -76,3 +77,42 @@
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !box.hidden) close(); });
 })();
 
+
+// 모바일 햄버거 메뉴
+(function () {
+  var btn = document.getElementById("menuToggle");
+  var drawer = document.getElementById("gnbDrawer");
+  if (!btn || !drawer) return;
+  btn.addEventListener("click", function () {
+    var open = drawer.hidden;
+    drawer.hidden = !open;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+  });
+})();
+
+// 교구·프로그램 분류 필터
+(function () {
+  var chips = document.querySelectorAll(".cat-chip");
+  if (!chips.length) return;
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      chips.forEach(function (cc) { cc.classList.remove("on"); });
+      chip.classList.add("on");
+      var cat = chip.getAttribute("data-cat");
+      document.querySelectorAll(".pl-card").forEach(function (card) {
+        card.hidden = (cat !== "전체" && card.getAttribute("data-cat") !== cat);
+      });
+    });
+  });
+})();
+
+// 기관 문의: URL 파라미터로 문의 유형 미리 선택
+(function () {
+  var sel = document.getElementById("contactType");
+  if (!sel) return;
+  var t = new URLSearchParams(location.search).get("type");
+  if (t && sel.querySelector('option[value="' + t + '"]')) sel.value = t;
+  var form = document.getElementById("contactForm");
+  form.addEventListener("submit", function (e) { e.preventDefault(); });
+})();

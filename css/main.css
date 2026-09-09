@@ -551,3 +551,125 @@ p { margin: 0; }
   .cta-text h2 { font-size: 27px; }
   .footer-inner { grid-template-columns: 1fr; }
 }
+
+
+/* ══ 서브페이지 공통 ══ */
+.subpage .gnb { background: rgba(250, 247, 242, 0.94); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(8px); }
+.subpage .gnb-logo .logo-w { display: none; }
+.subpage .gnb-logo .logo-c { display: block; }
+.subpage .gnb-menu a { color: var(--ink); }
+.page-head { padding: 176px 0 64px; background: var(--ivory-deep); border-bottom: 1px solid var(--line); }
+.page-title { font-family: var(--font-head); font-size: 42px; font-weight: 800; letter-spacing: -0.01em; color: var(--brown-deep); margin: 0; }
+.page-sub { margin-top: 14px; font-size: 18.5px; color: var(--muted); }
+.crumb { color: var(--teal); }
+.crumb:hover { text-decoration: underline; }
+.sec-alt { background: #FFFDF9; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+/* 온담 이야기: 로고 모티프 */
+.motifs { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 22px; }
+.motifs li { display: flex; align-items: center; gap: 18px; }
+.motifs h3 { font-size: 18.5px; color: var(--brown-deep); }
+.motifs p { margin-top: 3px; font-size: 16px; color: var(--muted); }
+.motif-shape { flex: none; width: 54px; height: 54px; display: inline-block; position: relative; }
+.ms-circle { border: 4px solid var(--brown); border-radius: 50%; }
+.ms-d { border: 4px solid var(--olive); border-right: none; border-radius: 14px 0 0 14px; }
+.ms-bowl { border: 4px solid var(--teal); border-top: none; border-radius: 0 0 999px 999px; height: 30px; margin-top: 12px; }
+
+/* 교구·프로그램 목록 */
+.cat-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+.cat-chip {
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: #FFFDF9;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.cat-chip:hover { border-color: var(--accent); color: var(--accent); }
+.cat-chip.on { background: var(--accent); border-color: var(--accent); color: #FFF9F3; }
+.pl-grid { grid-template-columns: repeat(3, 1fr); }
+.pl-card .pcard-img { height: 250px; background-size: cover; background-position: center; }
+.pl-card[hidden] { display: none; }
+
+/* 교구 상세 */
+.detail-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: start; }
+.detail-photo .slot { height: 480px; border-radius: var(--radius); background-size: cover; background-position: center; }
+.spec-list { list-style: none; margin: 26px 0 0; padding: 0; border-top: 2px solid var(--brown-deep); }
+.spec-list li { display: flex; justify-content: space-between; gap: 20px; padding: 15px 4px; border-bottom: 1px solid var(--line); font-size: 17px; }
+.spec-k { color: var(--muted); font-weight: 600; }
+.spec-v { color: var(--ink); font-weight: 600; text-align: right; }
+.spec-v .tbd { font-style: normal; font-size: 13.5px; color: var(--muted); font-weight: 400; }
+.detail-btns { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
+.how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.how-img { height: 200px; border-radius: var(--radius-s); background-size: cover; background-position: center; margin-bottom: 16px; }
+.how h3 { font-size: 18px; color: var(--brown-deep); }
+.how p { margin-top: 7px; font-size: 15.5px; color: var(--muted); }
+
+/* 기관 문의 */
+.contact-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: start; }
+.contact-form { display: grid; gap: 22px; }
+.form-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.field { display: block; }
+.field-label { display: block; font-size: 15.5px; font-weight: 700; color: var(--brown-deep); margin-bottom: 8px; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-s);
+  background: #FFFDF9;
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  color: var(--ink);
+  transition: border-color 0.2s ease;
+}
+.field textarea { resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); }
+.form-submit { justify-self: start; }
+.form-note { font-size: 14.5px; color: var(--muted); }
+.contact-side h2 { font-size: 23px; color: var(--brown-deep); margin-bottom: 20px; }
+.contact-types { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.contact-types li { background: #FFFDF9; border: 1px solid var(--line); border-radius: var(--radius-s); padding: 18px 20px; }
+.contact-types h3 { font-size: 17.5px; color: var(--brown-deep); }
+.contact-types p { margin-top: 5px; font-size: 15.5px; color: var(--muted); }
+.contact-direct { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.contact-direct h3 { font-size: 17.5px; color: var(--brown-deep); }
+.contact-direct p { margin-top: 6px; font-size: 16px; color: var(--muted); }
+
+/* 햄버거 메뉴 */
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #FFF9F3;
+  width: 46px; height: 46px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.menu-toggle svg { width: 28px; height: 28px; }
+.gnb.is-solid .menu-toggle, .subpage .menu-toggle { color: var(--ink); }
+.gnb-drawer {
+  background: rgba(250, 247, 242, 0.98);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 18px 30px rgba(60, 45, 25, 0.12);
+  padding: 10px 24px 18px;
+}
+.gnb-drawer a { display: block; padding: 14px 6px; font-size: 18px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--line); }
+.gnb-drawer a:last-child { border-bottom: none; }
+
+@media (max-width: 1024px) {
+  .menu-toggle { display: inline-flex; }
+  .detail-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+  .pl-grid { grid-template-columns: repeat(2, 1fr); }
+  .how-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .page-head { padding: 150px 0 48px; }
+  .page-title { font-size: 30px; }
+  .pl-grid, .how-grid, .form-row2 { grid-template-columns: 1fr; }
+  .detail-photo .slot { height: 320px; }
+}
