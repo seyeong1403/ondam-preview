@@ -1,6 +1,6 @@
 /* ── 온담 메인 시안 v1 · 2026-09-02 ─────────────────────
    팔레트: 로고 실측 3색 + 한지 아이보리 (BI 확정, 2026-08-28)
-   포인트 컬러 확정: 톤다운 오렌지 #B25E37 (세영 확정 2026-09-02, 온담 요청 반영)
+   포인트 컬러: 오렌지 #E0621A / 딥 #B84E0E (온담 1차 피드백 채도 상향, 2026-09-05)
 ──────────────────────────────────────────────────────── */
 @font-face {
   font-family: "Pretendard";
@@ -145,18 +145,18 @@ p { margin: 0; }
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
 .slot-story { background-image: url("../images/t1-terr.jpg"); }
-.slot-p1 { background-image: url("../images/t7-lantern.jpg"); }
-.slot-p2 { background-image: url("../images/t1-terr.jpg"); }
-.slot-p3 { background-image: url("../images/t5-water-workshop.jpg"); }
-.slot-p4 { background-image: url("../images/t3-pressed-frame.jpg"); }
+.slot-p1 { background-image: url("../images/p-owl.jpg"); background-position: center 30%; }
+.slot-p2 { background-image: url("../images/p-wreath.jpg"); }
+.slot-p3 { background-image: url("../images/p-obong.jpg"); }
+.slot-p4 { background-image: url("../images/p-najeon.jpg"); }
 .slot-m1 { background-image: url("../images/hero1.jpg"); }
 .slot-m2 { background-image: url("../images/t6-water-hand.jpg"); }
 .slot-m3 { background-image: url("../images/t4-pressed-flat.jpg"); }
 .slot-m4 { background-image: url("../images/hero2.jpg"); }
 .slot-m5 { background-image: url("../images/t8-pressed-table.jpg"); }
-.slot-g1 { background-image: url("../images/t7-lantern.jpg"); background-position: center 70%; }
-.slot-g2 { background-image: url("../images/t1-terr.jpg"); background-position: center 30%; }
-.slot-g3 { background-image: url("../images/t3-pressed-frame.jpg"); }
+.slot-g1 { background-image: url("../images/g-owl.jpg"); background-position: center 40%; }
+.slot-g2 { background-image: url("../images/g-wreath.jpg"); }
+.slot-g3 { background-image: url("../images/g-najeon.jpg"); background-position: center 35%; }
 
 /* ── GNB ── */
 .gnb {
