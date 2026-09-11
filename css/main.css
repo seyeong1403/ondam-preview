@@ -145,6 +145,16 @@ p { margin: 0; }
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
 .slot-story { background-image: url("../images/o-story.jpg"); }
+/* 온담 이야기: 서클 마스크 안 슬라이드 (메인 전용, 슬라이드 4장) */
+.story-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: translateX(100%);
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.story-slide.is-cur { transform: translateX(0); }
 .slot-p1 { background-image: url("../images/p-owl.jpg"); background-position: center 30%; }
 .slot-p2 { background-image: url("../images/p-wreath.jpg"); }
 .slot-p3 { background-image: url("../images/p-obong.jpg"); }

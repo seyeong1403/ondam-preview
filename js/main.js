@@ -116,3 +116,27 @@
   var form = document.getElementById("contactForm");
   form.addEventListener("submit", function (e) { e.preventDefault(); });
 })();
+
+// 온담 이야기: 서클 안 슬라이드 (4.5초 간격, 좌로 밀기)
+(function () {
+  var box = document.getElementById("storySlides");
+  if (!box) return;
+  var slides = [].slice.call(box.querySelectorAll(".story-slide"));
+  if (slides.length < 2) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var i = 0;
+  setInterval(function () {
+    var cur = slides[i];
+    var next = slides[(i + 1) % slides.length];
+    // 다음 슬라이드를 오른쪽에 스냅(무전환)해 둔 뒤 함께 밀어 넣기
+    next.style.transition = "none";
+    next.style.transform = "translateX(100%)";
+    next.getBoundingClientRect();
+    next.style.transition = "";
+    cur.classList.remove("is-cur");
+    cur.style.transform = "translateX(-100%)";
+    next.classList.add("is-cur");
+    next.style.transform = "translateX(0)";
+    i = (i + 1) % slides.length;
+  }, 4500);
+})();
