@@ -583,8 +583,8 @@ p { margin: 0; }
 .story-hero {
   display: flex;
   align-items: flex-end;
-  min-height: 100vh;
-  padding: 176px 0 88px;
+  min-height: 65vh;
+  padding: 150px 0 64px;
   background-image: linear-gradient(rgba(44, 30, 18, 0.18), rgba(44, 30, 18, 0.52)), url("../images/story-hero.jpg");
   background-size: cover;
   background-position: center 62%;
