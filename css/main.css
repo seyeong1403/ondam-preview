@@ -138,22 +138,22 @@ p { margin: 0; }
 
 /* 슬롯별 웜톤 변주 (회색 박스 금지) */
 .slot-hero1, .slot-hero2, .slot-hero3 { background-size: cover; background-position: center; }
-.slot-hero1 { background-image: linear-gradient(rgba(122, 91, 62, 0.1), rgba(122, 91, 62, 0.1)), url("../images/hero1.jpg"); }
-.slot-hero2 { background-image: linear-gradient(rgba(122, 91, 62, 0.12), rgba(122, 91, 62, 0.12)), url("../images/hero2.jpg"); background-position: center 38%; }
-.slot-hero3 { background-image: linear-gradient(rgba(122, 91, 62, 0.06), rgba(122, 91, 62, 0.06)), url("../images/hero3.jpg"); background-position: center 62%; }
+.slot-hero1 { background-image: linear-gradient(rgba(122, 91, 62, 0.1), rgba(122, 91, 62, 0.1)), url("../images/o-hero1.jpg"); }
+.slot-hero2 { background-image: linear-gradient(rgba(122, 91, 62, 0.12), rgba(122, 91, 62, 0.12)), url("../images/o-hero2.jpg"); background-position: center 38%; }
+.slot-hero3 { background-image: linear-gradient(rgba(122, 91, 62, 0.06), rgba(122, 91, 62, 0.06)), url("../images/o-hero3.jpg"); background-position: center 62%; }
 .slot-story, .slot-p1, .slot-p2, .slot-p3, .slot-p4,
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
-.slot-story { background-image: url("../images/t1-terr.jpg"); }
+.slot-story { background-image: url("../images/o-story.jpg"); }
 .slot-p1 { background-image: url("../images/p-owl.jpg"); background-position: center 30%; }
 .slot-p2 { background-image: url("../images/p-wreath.jpg"); }
 .slot-p3 { background-image: url("../images/p-obong.jpg"); }
 .slot-p4 { background-image: url("../images/p-najeon.jpg"); }
-.slot-m1 { background-image: url("../images/hero1.jpg"); }
-.slot-m2 { background-image: url("../images/t6-water-hand.jpg"); }
-.slot-m3 { background-image: url("../images/t4-pressed-flat.jpg"); }
-.slot-m4 { background-image: url("../images/hero2.jpg"); }
-.slot-m5 { background-image: url("../images/t8-pressed-table.jpg"); }
+.slot-m1 { background-image: url("../images/o-m1.jpg"); }
+.slot-m2 { background-image: url("../images/o-m2.jpg"); }
+.slot-m3 { background-image: url("../images/o-m3.jpg"); }
+.slot-m4 { background-image: url("../images/o-m4.jpg"); }
+.slot-m5 { background-image: url("../images/o-m5.jpg"); }
 .slot-g1 { background-image: url("../images/g-owl.jpg"); background-position: center 40%; }
 .slot-g2 { background-image: url("../images/g-wreath.jpg"); }
 .slot-g3 { background-image: url("../images/g-najeon.jpg"); background-position: center 35%; }
@@ -475,7 +475,7 @@ p { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(58, 38, 20, 0.66), rgba(58, 38, 20, 0.66)), url("../images/t7-lantern.jpg");
+  background-image: linear-gradient(rgba(58, 38, 20, 0.6), rgba(58, 38, 20, 0.6)), url("../images/o-cta.jpg");
   background-size: cover;
   background-position: center;
   clip-path: inset(100% 0 0 0);
