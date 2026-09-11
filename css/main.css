@@ -673,3 +673,60 @@ p { margin: 0; }
   .pl-grid, .how-grid, .form-row2 { grid-template-columns: 1fr; }
   .detail-photo .slot { height: 320px; }
 }
+
+
+/* 상세: 실제 활동 모습 갤러리 */
+.detail-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.detail-gallery .slot {
+  height: 280px;
+  border-radius: var(--radius-s);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.detail-gallery .slot:hover { transform: scale(1.02); box-shadow: 0 16px 32px rgba(90, 66, 40, 0.2); }
+.detail-gallery .slot:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+
+/* 기관 문의: FAQ */
+.faq-list { display: grid; gap: 14px; max-width: 900px; }
+.faq {
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  padding: 0 24px;
+}
+.faq summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brown-deep);
+  cursor: pointer;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq-mark { position: relative; flex: none; width: 22px; height: 22px; }
+.faq-mark::before, .faq-mark::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: transform 0.25s ease;
+}
+.faq-mark::before { width: 16px; height: 2.5px; transform: translate(-50%, -50%); }
+.faq-mark::after { width: 2.5px; height: 16px; transform: translate(-50%, -50%); }
+.faq[open] .faq-mark::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq > p { padding: 0 0 22px; font-size: 16.5px; color: #5C5245; }
+
+@media (max-width: 1024px) {
+  .detail-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .detail-gallery { grid-template-columns: 1fr 1fr; }
+  .detail-gallery .slot { height: 180px; }
+}
