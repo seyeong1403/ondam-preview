@@ -485,7 +485,7 @@ p { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(58, 38, 20, 0.6), rgba(58, 38, 20, 0.6)), url("../images/o-cta.jpg");
+  background-image: linear-gradient(rgba(58, 38, 20, 0.7), rgba(58, 38, 20, 0.7)), url("../images/o-cta.jpg");
   background-size: cover;
   background-position: center;
   clip-path: inset(100% 0 0 0);
