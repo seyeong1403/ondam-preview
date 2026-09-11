@@ -579,6 +579,20 @@ p { margin: 0; }
 .subpage .gnb-logo .logo-c { display: block; }
 .subpage .gnb-menu a { color: var(--ink); }
 .page-head { padding: 176px 0 64px; background: var(--ivory-deep); border-bottom: 1px solid var(--line); }
+/* 온담 이야기: 풀블리드 사진 히어로 (메인 히어로와 같은 문법) */
+.story-hero {
+  display: flex;
+  align-items: flex-end;
+  min-height: 78vh;
+  padding: 176px 0 88px;
+  background-image: linear-gradient(rgba(44, 30, 18, 0.18), rgba(44, 30, 18, 0.52)), url("../images/story-hero.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+.story-hero .wrap { width: 100%; }
+.story-hero .eyebrow { color: #F3D9C2; }
+.story-hero .page-title { color: #FFF9F3; text-shadow: 0 2px 18px rgba(40, 26, 14, 0.35); }
+.story-hero .page-sub { color: rgba(255, 249, 243, 0.88); }
 .page-title { font-family: var(--font-head); font-size: 42px; font-weight: 800; letter-spacing: -0.01em; color: var(--brown-deep); margin: 0; }
 .page-sub { margin-top: 14px; font-size: 18.5px; color: var(--muted); }
 .crumb { color: var(--teal); }
