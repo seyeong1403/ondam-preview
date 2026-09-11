@@ -328,6 +328,16 @@ p { margin: 0; }
 .badge { padding: 5px 13px; border-radius: 999px; font-size: 14px; font-weight: 600; }
 .badge-olive { background: #EEF0DF; color: #5B6532; }
 .badge-teal { background: #E2EEEC; color: #37605B; }
+/* 난이도 A안: 둥근 점 5개 + 한글 라벨 */
+.badge-level { display: inline-flex; align-items: center; gap: 7px; }
+.dots { display: inline-flex; gap: 4px; align-items: center; }
+.dots i { width: 9px; height: 9px; border-radius: 50%; background: transparent; border: 1.5px solid #A9C6C2; }
+.dots i.on { background: #37605B; border-color: #37605B; }
+.spec-level { display: inline-flex; align-items: center; gap: 10px; }
+.spec-level .dots { gap: 5px; }
+.spec-level .dots i { width: 11px; height: 11px; border-color: #CFC5B4; }
+.spec-level .dots i.on { background: var(--teal); border-color: var(--teal); }
+.spec-level .dlabel { color: var(--teal); font-weight: 700; }
 
 /* ── 4. 활동의 순간들 ── */
 .sec-moments { background: var(--ivory); }
