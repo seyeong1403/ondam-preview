@@ -144,7 +144,7 @@ p { margin: 0; }
 .slot-story, .slot-p1, .slot-p2, .slot-p3, .slot-p4,
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
-.slot-story { background-image: url("../images/o-story.jpg"); }
+.slot-story { background-image: url("../images/story-name.jpg"); }
 /* 온담 이야기: 서클 마스크 안 슬라이드 (메인 전용, 슬라이드 4장) */
 .story-slide {
   position: absolute;
