@@ -140,7 +140,7 @@ p { margin: 0; }
 .slot-hero1, .slot-hero2, .slot-hero3 { background-size: cover; background-position: center; }
 .slot-hero1 { background-image: linear-gradient(rgba(122, 91, 62, 0.1), rgba(122, 91, 62, 0.1)), url("../images/o-hero1.jpg"); }
 .slot-hero2 { background-image: linear-gradient(rgba(122, 91, 62, 0.12), rgba(122, 91, 62, 0.12)), url("../images/o-hero2.jpg"); }
-.slot-hero3 { background-image: linear-gradient(rgba(122, 91, 62, 0.06), rgba(122, 91, 62, 0.06)), url("../images/o-hero3.jpg"); background-position: center 32%; }
+.slot-hero3 { background-image: linear-gradient(rgba(122, 91, 62, 0.06), rgba(122, 91, 62, 0.06)), url("../images/o-hero3b.jpg"); background-position: center 32%; }
 .slot-story, .slot-p1, .slot-p2, .slot-p3, .slot-p4,
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
