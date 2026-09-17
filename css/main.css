@@ -178,7 +178,7 @@ p { margin: 0; }
 }
 .gnb.is-solid { background: rgba(250, 247, 242, 0.94); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(8px); }
 .gnb-inner { max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; gap: 40px; }
-.gnb-logo img { height: 94px; display: block; }
+.gnb-logo img { height: 94px; width: auto; max-width: none; display: block; }
 .gnb-logo .logo-c { display: none; }
 .gnb.is-solid .gnb-logo .logo-w { display: none; }
 .gnb.is-solid .gnb-logo .logo-c { display: block; }
@@ -555,6 +555,9 @@ p { margin: 0; }
   .gnb-menu { display: none; }
 }
 @media (max-width: 640px) {
+  /* 모바일: 상단 기관문의 제거(온담 확정 9/17, 하단 CTA·드로어 메뉴로 통일) + 로고 원본 비율 유지 */
+  .gnb-cta { display: none; }
+  .gnb-logo img { height: 64px; }
   .sec { padding: 72px 0; }
   .sec-title { font-size: 29px; }
   .hero-title { font-size: 36px; }
