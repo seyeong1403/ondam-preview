@@ -137,10 +137,12 @@ p { margin: 0; }
 .slot-inline { color: var(--muted); font-size: 14px; }
 
 /* 슬롯별 웜톤 변주 (회색 박스 금지) */
-.slot-hero1, .slot-hero2, .slot-hero3 { background-size: cover; background-position: center; }
-.slot-hero1 { background-image: linear-gradient(rgba(250, 243, 232, 0.08), rgba(250, 243, 232, 0.08)), url("../images/o-hero1.jpg"); }
-.slot-hero2 { background-image: linear-gradient(rgba(250, 243, 232, 0.08), rgba(250, 243, 232, 0.08)), url("../images/o-hero2.jpg"); }
-.slot-hero3 { background-image: linear-gradient(rgba(250, 243, 232, 0.06), rgba(250, 243, 232, 0.06)), url("../images/o-hero3b.jpg"); background-position: center 32%; }
+.slot-hero1, .slot-hero2, .slot-hero3, .slot-hero4, .slot-hero5 { background-size: cover; background-position: center; }
+.slot-hero1 { background-image: url("../images/o-h41.jpg"); }
+.slot-hero2 { background-image: url("../images/o-h42.jpg"); }
+.slot-hero3 { background-image: url("../images/o-h43.jpg"); }
+.slot-hero4 { background-image: url("../images/o-h44.jpg"); }
+.slot-hero5 { background-image: linear-gradient(rgba(250, 243, 232, 0.06), rgba(250, 243, 232, 0.06)), url("../images/o-hero1.jpg"); }
 .slot-story, .slot-p1, .slot-p2, .slot-p3, .slot-p4,
 .slot-m1, .slot-m2, .slot-m3, .slot-m4, .slot-m5,
 .slot-g1, .slot-g2, .slot-g3 { background-size: cover; background-position: center; }
@@ -215,6 +217,15 @@ p { margin: 0; }
 .hero-slide.is-on { opacity: 1; }
 .hero-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40, 30, 20, 0.28) 0%, rgba(40, 30, 20, 0.14) 45%, rgba(40, 30, 20, 0.42) 100%); }
 .hero-body { position: relative; z-index: 3; padding: 0 24px; }
+/* 밝은 배경 컷에서 텍스트 가독 확보용 국소 스크림 (사진 밝기는 유지) */
+.hero-body::before {
+  content: "";
+  position: absolute;
+  inset: -14% -22%;
+  z-index: -1;
+  background: radial-gradient(ellipse 60% 64% at 50% 48%, rgba(45, 32, 20, 0.55), rgba(45, 32, 20, 0) 78%);
+  pointer-events: none;
+}
 .hero-logo {
   height: 280px;
   aspect-ratio: 264.44 / 236.22;
@@ -566,9 +577,11 @@ p { margin: 0; }
   /* 모바일: 상단 기관문의 제거(온담 확정 9/17, 하단 CTA·드로어 메뉴로 통일) + 로고 원본 비율 유지 */
   .gnb-cta { display: none; }
   /* 모바일 크롭: 활동(손·교구·얼굴)이 보이도록 슬라이드별 조정 (온담 3차 ②) */
-  .slot-hero1 { background-position: 62% center; }
-  .slot-hero2 { background-position: 72% center; }
-  .slot-hero3 { background-position: 24% center; }
+  .slot-hero1 { background-position: 55% center; }
+  .slot-hero2 { background-position: 45% center; }
+  .slot-hero3 { background-position: 50% center; }
+  .slot-hero4 { background-position: 42% center; }
+  .slot-hero5 { background-position: 62% center; }
   .gnb-logo img { height: 64px; }
   .sec { padding: 72px 0; }
   .sec-title { font-size: 29px; }
