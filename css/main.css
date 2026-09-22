@@ -211,7 +211,7 @@ p { margin: 0; }
 .gnb-cta:hover { transform: translateY(-2px); }
 
 /* ── 1. 히어로 ── */
-.hero { position: relative; height: 100vh; min-height: 640px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero { position: relative; height: 100vh; min-height: 640px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
 .hero-media { position: absolute; inset: 0; overflow: hidden; }
 .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.6s ease; }
 .hero-slide.is-on { opacity: 1; }
