@@ -577,10 +577,11 @@ p { margin: 0; }
   /* 모바일: 상단 기관문의 제거(온담 확정 9/17, 하단 CTA·드로어 메뉴로 통일) + 로고 원본 비율 유지 */
   .gnb-cta { display: none; }
   /* 모바일 크롭: 활동(손·교구·얼굴)이 보이도록 슬라이드별 조정 (온담 3차 ②) */
-  .slot-hero1 { background-position: 55% center; }
-  .slot-hero2 { background-position: 45% center; }
-  .slot-hero3 { background-position: 50% center; }
-  .slot-hero4 { background-position: 42% center; }
+  /* 모바일: 얼굴+손+교구 중심의 전용 세로 크롭 이미지로 스왑 */
+  .slot-hero1 { background-image: url("../images/o-h41m.jpg"); }
+  .slot-hero2 { background-image: url("../images/o-h42m.jpg"); }
+  .slot-hero3 { background-image: url("../images/o-h43m.jpg"); }
+  .slot-hero4 { background-image: url("../images/o-h44m.jpg"); }
   .slot-hero5 { background-position: 62% center; }
   .gnb-logo img { height: 64px; }
   .sec { padding: 72px 0; }
