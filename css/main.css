@@ -138,7 +138,7 @@ p { margin: 0; }
 
 /* 슬롯별 웜톤 변주 (회색 박스 금지) */
 .slot-hero1, .slot-hero2, .slot-hero3, .slot-hero4, .slot-hero5 { background-size: cover; background-position: center; }
-.slot-hero1 { background-image: url("../images/o-h41.jpg"); }
+.slot-hero1 { background-image: url("../images/o-h41b.jpg"); }
 .slot-hero2 { background-image: url("../images/o-h42.jpg"); }
 .slot-hero3 { background-image: url("../images/o-h43.jpg"); }
 .slot-hero4 { background-image: url("../images/o-h44.jpg"); }
@@ -578,7 +578,7 @@ p { margin: 0; }
   .gnb-cta { display: none; }
   /* 모바일 크롭: 활동(손·교구·얼굴)이 보이도록 슬라이드별 조정 (온담 3차 ②) */
   /* 모바일: 얼굴+손+교구 중심의 전용 세로 크롭 이미지로 스왑 */
-  .slot-hero1 { background-image: url("../images/o-h41m.jpg"); }
+  .slot-hero1 { background-image: url("../images/o-h41bm.jpg"); }
   .slot-hero2 { background-image: url("../images/o-h42m.jpg"); }
   .slot-hero3 { background-image: url("../images/o-h43m.jpg"); }
   .slot-hero4 { background-image: url("../images/o-h44m.jpg"); }
